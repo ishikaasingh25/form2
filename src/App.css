@@ -1,38 +1,165 @@
-.App {
+/* Global reset and basic styles */
+* {
+  box-sizing: border-box;
+  margin: 50;
+  padding: 50;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c9d5de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container styles */
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.form-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Flexbox grid for form */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-col {
+  flex: 1;
+  margin-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Input styles */
+input{
+  width: 100px;
+  box-sizing: border-box;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+.input-field,
+.select-field,
+.date-time-picker {
+  width: 100%;
+  padding: 50px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.input-field:focus,
+.select-field:focus,
+.date-time-picker:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Error message styles */
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Button styles */
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px;
+  display: block;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Styles for checkboxes */
+.checkbox-group {
+  margin-bottom: 15px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Optional: Additional styling for specific fields */
+.portfolio-url-field {
+  margin-top: 15px;
+}
+
+.management-experience-field {
+  margin-top: 15px;
+}
+.form_class{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
+}
+.label_class{
+  margin: 10px;
+}
+h1 {
+  text-align: center;
+}
+textarea {
+  width: 200px;
+}
+input[type="text"] {
+  width: 200px;
+}
+input[type="email"] {
+  width: 200px;
+}
+input[type="tel"] {
+  width: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="url"] {
+  width: 200px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+option{
+  width: 200px;
+}
+.label_class_manager{
+  margin-top: 15px;
+  display: flex;
+  align-items: row;
+}
+.manager_text{
+  height: 23px;
+}
+.App-footer{
+  text-align: center;
 }
